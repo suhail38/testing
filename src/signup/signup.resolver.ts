@@ -26,7 +26,7 @@ export class SignupResolver {
 
   @Query(() => Signup)
   findOne(@Args('id', { type: () => ID }) id: string) {
-    // return this.signupService.findOne(id);
+    return this.signupService.findOne(id);
   }
 
   @Query(() => Signup)
